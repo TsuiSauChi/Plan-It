@@ -1,0 +1,51 @@
+<!--
+  Generated template for the ChatPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Chat
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <div class="message-wrap">
+
+    <div *ngFor="let message of messages" class="message" [class.left]=" message.from === 'James' " [class.right]=" message.from === 'Nishikiri' ">
+      <img class="user-img" [src]="message.image" alt="" src="">
+      <div class="msg-detail">
+        <div class="msg-info">
+          <p>
+            {{message.from}}&nbsp;&nbsp;&nbsp;{{message.created | date:'dd.MM hh:MM'}}</p>
+        </div>
+        <div class="msg-content">
+          <span class="triangle"></span>
+          <p class="line-breaker ">{{ message.text }}</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-row class="message_row">
+      <ion-col col-9>
+        <ion-item no-lines>
+          <ion-input type="text" placeholder="Message" [(ngModel)]="message"></ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-col col-3>
+        <button ion-button clear color="primary" (click)="sendMessage()" [disabled]="message === ''">
+          Send
+        </button>
+      </ion-col>
+    </ion-row>
+  </ion-toolbar>
+</ion-footer>

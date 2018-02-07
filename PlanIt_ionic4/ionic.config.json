@@ -1,0 +1,8 @@
+{
+  "name": "PlanIt_ionic4",
+  "app_id": "",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}

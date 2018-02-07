@@ -1,0 +1,60 @@
+.detailsimage{
+    opacity: 0.5%;
+}
+
+.card-background-page {
+
+    ion-card {
+      position: relative;
+      text-align: center;
+    }
+
+    .card-image{
+        position: absolute;
+        top: 15%;
+        border-radius: 50%;
+        width: 120px;
+        height: 120px;
+        left: 33%;
+    }
+  
+    .card-title {
+      position: absolute;
+      top: 72%;
+      font-size: 1.6em;
+      width: 100%;
+      font-weight: bold;
+      color: #fff;
+    }
+  
+    .card-subtitle {
+      font-size: 1.0em;
+      position: absolute;
+      top: 80%;
+      width: 100%;
+      color: #fff;
+    }
+
+    .cart-message{
+      position: absolute;
+      top: 3%;
+      right: 3%;
+      background-color: #FFD185;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+    }
+
+    .cart-chat{
+      margin-top: 12px;
+    }
+  }
+
+  .subtitle{
+    text-align: center;
+    text-decoration: underline;
+  }
+
+  .subtitleimage{
+    height: 130px;
+  }

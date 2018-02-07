@@ -1,0 +1,77 @@
+<!--
+  Generated template for the DetailsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>
+      <span class="title">@Nishikiri_M's Profile</span>
+    </ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding class="card-background-page">
+  <ion-card>
+    <img class="detailsimage" src="../../assets/imgs/tree.jpg" />
+    <div class="cart-message" (click)="Chat()">
+    <ion-icon class="cart-chat" name="ios-chatboxes"></ion-icon>
+    </div>
+    <img class="card-image" src="../../assets/imgs/planner1.png" />
+    <div class="card-title">@Nishikiri_M</div>
+    <div class="card-subtitle">
+      <ion-rating [numStars]="5" [readOnly]="false" [value]="2" (clicked)="starClicked($event)">
+      </ion-rating>
+    </div>
+  </ion-card>
+  <h5 class="subtitle">Your Itinerary</h5>
+  <ion-grid>
+    <ion-row>
+      <ion-col col-6>
+        <ion-card>
+          <img class="subtitleimage" src="../../assets/imgs/mountfuji.jpg" />
+          <ion-card-content>
+            <h3>
+              <b>Mount Fuj</b>i</h3>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col col-6>
+        <ion-card>
+          <img class="subtitleimage" src="../../assets/imgs/kyoto.jpg" />
+          <ion-card-content>
+            <h3>
+              <b>Kyoto</b>
+            </h3>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-6>
+        <ion-card>
+          <img class="subtitleimage" src="../../assets/imgs/tokyo.jpg" />
+          <ion-card-content>
+            <h3>
+              <b>Tokyo</b>
+            </h3>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col col-6>
+        <ion-card>
+          <img class="subtitleimage" src="../../assets/imgs/osaka.jpg" />
+          <ion-card-content>
+            <h3>
+              <b>Osaka</b>
+            </h3>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

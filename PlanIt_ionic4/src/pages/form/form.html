@@ -1,0 +1,54 @@
+<!--
+  Generated template for the FormPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Travler Form</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="form" padding>
+  <ion-list-header>Traveler Form</ion-list-header>
+  <ion-item>
+    <ion-label>What is the main language you speak?</ion-label>
+    <ion-select [(ngModel)]="language">
+      <ion-option value="1">English</ion-option>
+      <ion-option value="2">Chinese</ion-option>
+      <ion-option value="3">Malay</ion-option>
+      <ion-option value="4">Tamil</ion-option>
+    </ion-select>
+  </ion-item>
+  <ion-item>
+    <ion-label>Which Country are you interested to visit</ion-label>
+    <ion-select [(ngModel)]="country">
+      <ion-option value="1">Malaysia</ion-option>
+      <ion-option value="2">Korea</ion-option>
+      <ion-option value="3">Japan</ion-option>
+    </ion-select>
+  </ion-item>
+  <ion-item>
+    <ion-label>Do you mind having locals to plan for your trip?</ion-label>
+    <ion-select [(ngModel)]="locals">
+      <ion-option value="1">Yes</ion-option>
+      <ion-option value="2">No</ion-option>
+    </ion-select>
+  </ion-item>
+  <ion-item>
+    <ion-label>What is your budget range?</ion-label>
+    <ion-select [(ngModel)]="budget">
+      <ion-option value="1">>S$500</ion-option>
+      <ion-option value="2">>S$1000</ion-option>
+      <ion-option value="3">>S$1500</ion-option>
+      <ion-option value="4">>S$2000</ion-option>
+    </ion-select>
+  </ion-item>
+  <br>
+  <br>
+  <button color="danger" ion-button block (click)="submit()">Submit</button>
+</ion-content>
